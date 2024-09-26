@@ -1,0 +1,87 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container-fluid {
+    justify-content: space-around;
+}
+.links {
+    display: flex;
+}
+.links a:hover {
+    color: rgb(144, 143, 143);
+    border-bottom: rgb(200, 198, 198) solid 1px;
+    transition: .5s;
+}
+.links-under a:hover , .contact h4:hover {
+    border: none;
+    color: rgb(144, 143, 143);
+}
+.paragraphe {
+    letter-spacing: 1px;
+}
+.h1 {
+    font-size: 60px;
+}
+#icon {
+    display: none;
+}
+.projects {
+    position: relative;
+}
+/* .projects .cadr-img {
+    width: 40%;
+}
+.projects .cadr-img img {
+    width: 100%;
+} */
+.contact {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 777px) {
+    .container-fluid {
+        justify-content: space-between ;
+        padding: 10px 20px;
+    }
+    .pack {
+        transform: translateY(-100%);
+        background-color: rgb(28, 28, 28);
+        position: absolute;
+        left: 0%;
+        right: 0;
+        top: 0%;  
+        bottom: 50%;
+    }
+    .pack .links {
+        display: block; 
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .pack .links a{
+        padding-top: 20px;
+        color: white;
+    }
+    #icon {
+        display: block;
+        cursor: pointer;
+    }
+    .links-under {
+        display: block;
+    }
+    .contact {
+        width: 90%;
+    }
+    /* .projects img {
+        width: 100%;
+    } */
+    /* .projects .cadr-img {
+        width: 100%;
+    } */
+}
